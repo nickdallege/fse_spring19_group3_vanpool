@@ -6,6 +6,9 @@
   "name": "fse_spring19_group3_vanpool",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd backend && node server.js\" \"cd client && npm start\""
+  },
   "repository": "https://github.com/nickdallege/fse_spring19_group3_vanpool.git",
   "author": "Nick Dallege <nick-dallege@uiowa.edu>",
   "license": "MIT"

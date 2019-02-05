@@ -3,13 +3,16 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const logger = require("morgan");
 const Data = require("./schema");
+const credentials = require("./credentials");
+const username = credentials.USERNAME;
+const password = credentials.PASSWORD;
 
 const API_PORT = 3001;
 const app = express();
 const router = express.Router();
 
 // this is our MongoDB database
-const dbRoute = "mongodb://jelo:a9bc839993@ds151382.mlab.com:51382/jelotest";
+const dbRoute = "mongodb://" + username + ":" + password + "@ds221405.mlab.com:21405/vanpool";
 
 // connects our back end code with the database
 mongoose.connect(
