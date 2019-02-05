@@ -1,5 +1,12 @@
 {
   "dependencies": {
-    "axios": "^0.18.0"
-  }
+    "axios": "^0.18.0",
+    "concurrently": "^4.1.0"
+  },
+  "name": "fse_spring19_group3_vanpool",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nickdallege/fse_spring19_group3_vanpool.git",
+  "author": "Nick Dallege <nick-dallege@uiowa.edu>",
+  "license": "MIT"
 }
