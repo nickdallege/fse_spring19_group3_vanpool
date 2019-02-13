@@ -1,15 +1,24 @@
 {
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
   "dependencies": {
-    "axios": "^0.18.0",
-    "concurrently": "^4.1.0"
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
   },
-  "name": "fse_spring19_group3_vanpool",
-  "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "start": "concurrently \"cd backend && node server.js\" \"cd client && npm start\""
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "start": "node server.js"
   },
-  "repository": "https://github.com/nickdallege/fse_spring19_group3_vanpool.git",
-  "author": "Nick Dallege <nick-dallege@uiowa.edu>",
-  "license": "MIT"
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
