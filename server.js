@@ -1,7 +1,7 @@
 const express = require('express');
 const mysql = require('mysql');
 
-const credentials = require('./client/src/credentials');
+const credentials = require('./credentials');
 const password = credentials.PASSWORD;
 const db = credentials.DB;
 
@@ -14,7 +14,7 @@ const connection = mysql.createConnection({
   database: db
 })
 
-require('./client/src/routes/html-routes')(app, connection);
+require('./routes/html-routes')(app, connection);
 
 // if error, log the error message
 connection.connect(function (err) {
